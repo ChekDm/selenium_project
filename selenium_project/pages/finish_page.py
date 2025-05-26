@@ -36,4 +36,3 @@ class Finish_page(Base):
         self.assert_url(f"https://www.softmagazin.ru/personal/order/?ORDER_ID={order_number}")  # Проверка URL (содержит номер заказа)
         self.assert_word(self.get_order_success_msg(), "успешно создан.")                 # Проверка заголовка
         self.get_screenshot()                                                                   # Создание скриншота
-        print("Screen OK")

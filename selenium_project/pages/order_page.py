@@ -184,6 +184,5 @@ class Order_page(Base):
         self.click_button_next_contacts()  # Нажатие на кнопку Далее в разделе Контакты
         self.click_button_next_delivery()  # Нажатие на кнопку Далее в разделе Доставка
 
-        # self.click_checkout_button()       # Нажатие на кнопку Оформить заказ
-        print("Confirm OK")
+        self.click_checkout_button()       # Нажатие на кнопку Оформить заказ
 
