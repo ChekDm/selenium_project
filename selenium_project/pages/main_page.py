@@ -9,10 +9,6 @@ from base.base_class import Base
 class Main_page(Base):
     """Класс содержит локаторы и методы для главной страницы с товарами"""
 
-    def __init__(self, driver):
-        super().__init__(driver)
-        self.driver = driver
-
     # Locators
 
     menu_soft = "//ul[@class='top-level']/li[2]"                            # Главное меню - Программное обеспечение

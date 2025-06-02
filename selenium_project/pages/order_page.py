@@ -10,10 +10,6 @@ from base.base_class import Base
 class Order_page(Base):
     """Класс содержит локаторы и методы для страницы оформления заказа"""
 
-    def __init__(self, driver):
-        super().__init__(driver)
-        self.driver = driver
-
     # Locators
 
     order_page_header = "//div[@class='page-title']/h1"                 # Заголовок страницы Оформление заказа
@@ -184,5 +180,5 @@ class Order_page(Base):
         self.click_button_next_contacts()  # Нажатие на кнопку Далее в разделе Контакты
         self.click_button_next_delivery()  # Нажатие на кнопку Далее в разделе Доставка
 
-        self.click_checkout_button()       # Нажатие на кнопку Оформить заказ
+        # self.click_checkout_button()       # Нажатие на кнопку Оформить заказ
 

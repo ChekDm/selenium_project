@@ -7,10 +7,6 @@ from base.base_class import Base
 class Cart_page(Base):
     """Класс содержит локаторы и методы для страницы подтверждения товара в корзине"""
 
-    def __init__(self, driver):
-        super().__init__(driver)
-        self.driver = driver
-
     # Locators
 
     cart_header = "//div[@class='basket-items-list-header']//h1"                                                             # Заголовок страницы Корзина

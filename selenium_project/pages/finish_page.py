@@ -7,10 +7,6 @@ from base.base_class import Base
 class Finish_page(Base):
     """Класс содержит локаторы и методы для финальной страницы"""
 
-    def __init__(self, driver):
-        super().__init__(driver)
-        self.driver = driver
-
     # Locators
 
     order_number = "//div[@class='container-confirm-custom']/div[2]"            # Сообщение с номером заказа - "Ваш заказ №XXXXXX"

@@ -9,10 +9,6 @@ from base.base_class import Base
 class Login_page(Base):
     """Класс с локаторами и методами для авторизации"""
 
-    def __init__(self, driver):
-        super().__init__(driver)
-        self.driver = driver
-
     url = 'https://www.softmagazin.ru/' # URL тестируемого сайта
 
 
